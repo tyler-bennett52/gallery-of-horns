@@ -1,0 +1,11 @@
+.Horned-Beast{
+  height: 600px;
+  width: 300px;
+  border: 1px black solid;
+  background-color: rgba(103, 31, 132, 0.5);
+}
+
+.Horned-Beast>img {
+  width: 250px;
+  height: 200px;
+}

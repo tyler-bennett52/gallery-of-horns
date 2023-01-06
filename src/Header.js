@@ -6,7 +6,6 @@ class Header extends React.Component{
     return(
       <div>
         <h1>Gallery of Horns</h1>
-        <h2>Let's go!!!</h2>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
+import bigHornedData from "../data";
 import '../css/Main.css'
 
 const hornedData = [{
@@ -30,7 +31,7 @@ const hornedData = [{
 }]
 
 console.log(hornedData);
-const hornedComponents = hornedData.map(obj => {
+const hornedComponents = bigHornedData.map(obj => {
   return (
     <HornedBeast
       id={obj.id}

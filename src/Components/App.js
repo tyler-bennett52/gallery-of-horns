@@ -6,16 +6,11 @@ import Footer from './Footer';
 import bigHornedData from '../data';
 import SelectedBeast from './SelectedBeast';
 
-
-
-
-
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       showModal: false,
-      selectedBeast: 'gotem',
       modalDetails: {
         key: 1,
         imageUrl: "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
@@ -30,7 +25,6 @@ class App extends React.Component {
   handleOpenModal = (key, imageUrl, title, description) => {
     this.setState({
       showModal: true,
-      selectedBeast: key,
       modalDetails: {
         key: key,
         imageUrl: imageUrl,

@@ -1,11 +1,20 @@
 .Horned-Beast{
-  height: 600px;
+  height: 425px;
   width: 300px;
   border: 1px black solid;
   background-color: rgba(103, 31, 132, 0.5);
 }
 
 .Horned-Beast>img {
-  width: 250px;
-  height: 200px;
+ width: 100%;
+ height: 200px;
+}
+
+.Card-Button {
+  font-size: larger;
+  border: 1px white solid;
+}
+
+.Card-Button:hover {
+  border: 1px white solid;
 }

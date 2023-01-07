@@ -1,6 +1,6 @@
 # gallery-of-horns
 
-[Netlify Deployment](https://63bdad2b5dbb7d196870fed3--tb-gallery-of-horns.netlify.app/)
+[Netlify Deployment](https://tb-gallery-of-horns.netlify.app/)
 
 Heart emoji from [emojipedia.org](https://emojipedia.org/red-heart/)
 

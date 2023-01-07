@@ -1,6 +1,6 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import './Main.css'
+import '../css/Main.css'
 
 const hornedData = [{
   "_id": 1,
@@ -33,12 +33,12 @@ console.log(hornedData);
 const hornedComponents = hornedData.map(obj => {
   return (
     <HornedBeast
-      id = {obj.id}
-      imageUrl = {obj.image_url}
-      title = {obj.title}
-      description = {obj.description}
-      keyword = {obj.keyword}
-      horns = {obj.horns} />
+      id={obj.id}
+      imageUrl={obj.image_url}
+      title={obj.title}
+      description={obj.description}
+      keyword={obj.keyword}
+      horns={obj.horns} />
   )
 })
 

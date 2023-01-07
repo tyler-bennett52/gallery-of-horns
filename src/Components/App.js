@@ -27,6 +27,27 @@ class App extends React.Component {
     }
 
   }
+  handleOpenModal = (key, imageUrl, title, description) => {
+    this.setState({
+      showModal: true,
+      selectedBeast: key,
+      modalDetails: {
+        key: key,
+        imageUrl: imageUrl,
+        title: title,
+        description: description
+      }
+    })
+  }
+ 
+  handleCloseModal = (name) => {
+    this.setState({
+      showModal: false,
+      selectedBeast: name,
+      modalDetails: {}
+    })
+  }
+
   render() {
     return (
       <div className='App'>
@@ -44,26 +65,8 @@ class App extends React.Component {
       </div>
     )
   }
-  handleOpenModal = (name) => {
-    this.setState({
-      showModal: true,
-      selectedBeast: name,
-      modalDetails: {
-        key: this.props.key,
-        imageUrl: this.props.imageUrl,
-        title: this.props.title,
-        description: this.props.description
-      }
-    })
-    console.log(this.state.modalDetails)
-  }
-  handleCloseModal = (name) => {
-    this.setState({
-      showModal: false,
-      selectedBeast: name,
-      modalDetails: {}
-    })
-  }
+
+
 }
 
 

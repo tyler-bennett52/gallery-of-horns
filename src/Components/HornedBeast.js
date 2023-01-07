@@ -21,9 +21,9 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <Card className="Horned-Beast" style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={this.props.imageUrl} />
+        <Card.Img onClick={this.props.handleOpenModal} variant="top" src={this.props.imageUrl} />
         <Card.Body>
-          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Title onClick={this.props.handleOpenModal}>{this.props.title}</Card.Title>
           <Card.Text>
             {this.props.description}
           </Card.Text>

@@ -35,6 +35,6 @@ Estimate of time needed to complete: 5 to add 45 to adjust to my liking
 
 Start time: 1320
 
-Finish time: _____
+Finish time: 1530
 
-Actual time needed to complete: _____
+Actual time needed to complete: taking out an hour for lunch leaves us with 1hr and 10 mins.

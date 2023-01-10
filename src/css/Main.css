@@ -2,5 +2,5 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 3px;
+  gap:  15px 3px;
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import '../css/HornedBeast.css'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -18,13 +20,19 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      <div className="Horned-Beast">
-        <h2>{this.props.title} <span onClick={this.handleLike}> ❤️ {this.state.numLikes}</span></h2>
-        <img src={this.props.imageUrl} alt={this.props.title} title = {this.props.title}/>
-        <p>{this.props.description}</p>
-      </div>
-    )
+      <Card className="Horned-Beast" style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={this.props.imageUrl} />
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>
+            {this.props.description}
+          </Card.Text>
+          <Button className="Card-Button" variant="" onClick={this.handleLike}>{this.state.isLiked ? '❤️' : '🤍'} {this.state.numLikes}</Button>
+        </Card.Body>
+      </Card>
+    );
   }
 }
 
 export default HornedBeast;
+

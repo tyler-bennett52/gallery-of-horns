@@ -19,7 +19,7 @@ class HornedBeast extends React.Component {
   }
 
   handleImageClick = () => {
-    this.props.handleOpenModal(this.props.key, this.props.imageUrl, this.props.title, this.props.description);
+    this.props.handleOpenModal(this.props.imageUrl, this.props.title, this.props.description);
   } 
 
   render() {

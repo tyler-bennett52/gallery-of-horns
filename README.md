@@ -42,8 +42,19 @@ Actual time needed to complete: taking out an hour for lunch leaves us with 1hr 
 ## Feature #4 = Display Modal
 
 Estimate of time needed to complete: 3 hours
+
 Start Time: 1400
 
 Finish Time: 1530
 
 Actual Time: 90 minutes
+
+## Feature #5 - Implement Search
+
+Esitmate of time needed to complete: 1 hour
+
+Start Time: 1400
+
+End Time: 1430
+
+Actual Time: 30 mins

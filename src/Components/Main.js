@@ -1,6 +1,5 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import bigHornedData from "../data";
 import '../css/Main.css'
 
 

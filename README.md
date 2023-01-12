@@ -28,7 +28,7 @@ Finish time: 1259
 
 Actual time needed to complete: 14
 
-## Feature #3 = Implement Bootstrap
+## Feature #3 - Implement Bootstrap
 
 ---
 Estimate of time needed to complete: 5 to add 45 to adjust to my liking
@@ -39,8 +39,9 @@ Finish time: 1530
 
 Actual time needed to complete: taking out an hour for lunch leaves us with 1hr and 10 mins.
 
-## Feature #4 = Display Modal
+## Feature #4 - Display Modal
 
+---
 Estimate of time needed to complete: 3 hours
 
 Start Time: 1400
@@ -51,6 +52,7 @@ Actual Time: 90 minutes
 
 ## Feature #5 - Implement Search
 
+---
 Esitmate of time needed to complete: 1 hour
 
 Start Time: 1400

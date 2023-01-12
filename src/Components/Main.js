@@ -1,12 +1,11 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import bigHornedData from "../data";
 import '../css/Main.css'
 
 
 class Main extends React.Component {
   render() {
-    const hornedComponents = bigHornedData.map(obj => {
+    const hornedComponents = this.props.data.map(obj => {
       return (
         <HornedBeast
           key={obj._id}

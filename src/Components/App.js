@@ -5,12 +5,15 @@ import Main from './Main';
 import Footer from './Footer';
 import bigHornedData from '../data';
 import SelectedBeast from './SelectedBeast';
+import { FloatingLabel, Form } from 'react-bootstrap'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       showModal: false,
+      data: bigHornedData,
+      newData: bigHornedData,
       modalDetails: {
         key: 1,
         imageUrl: null,
@@ -32,7 +35,7 @@ class App extends React.Component {
       }
     })
   }
- 
+
   handleCloseModal = (name) => {
     this.setState({
       showModal: false,
@@ -41,12 +44,31 @@ class App extends React.Component {
     })
   }
 
+  filterData = (event) => {
+    if (event.target.value === 'all') {
+      this.setState({newData: this.state.data})
+    } else {    this.setState({
+      newData: this.state.data.filter(obj => obj.horns === +event.target.value)
+    })}
+
+  }
+
   render() {
     return (
       <div className='App'>
-        <Header />
+        <Header
+          filterData={this.filterData} />
+        <FloatingLabel onChange={this.filterData} className="HornSelect" controlId="HornSelect" label="Horn Select" htmlFor="HornSelect">
+          <Form.Select>
+            <option value="all">All</option>
+            <option value='1'>One</option>
+            <option value='2'>Two</option>
+            <option value='3'>Three</option>
+            <option value='100'>More than 3</option>
+          </Form.Select>
+        </FloatingLabel>
         <Main
-          data={bigHornedData}
+          data={this.state.newData}
           handleCloseModal={this.handleCloseModal}
           handleOpenModal={this.handleOpenModal}
         />
@@ -58,8 +80,6 @@ class App extends React.Component {
       </div>
     )
   }
-
-
 }
 
 
